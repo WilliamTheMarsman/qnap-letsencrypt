@@ -1,4 +1,6 @@
 # Let's Encrypt on QNAP
+# Fork Differences
+- Add `acme_tiny.py`, which must be copied into `./acme_tiny/` after running `./init.sh` to bypass inability to perform reverse DNS lookup from within a local network, as a result of a depressingly featureless router.
 ## Install Instructions
 ### NAS Setup
 1. Login to your NAS and make sure that the `Python 2.7` app is installed.
